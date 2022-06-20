@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondLessonADsActivity"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/title_app_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="Second lesson Ad's "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://youtu.be/zz7V0ggh458"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+    <!-- in the end need change id to personal id. but in the testing use only testing id-->
+
+    <Button
+        android:id="@+id/start_interstitial_ad_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Run Interstitial Ad"/>
+
+    <Button
+        android:id="@+id/rewarded_vide_ad_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Run Rewarded Video Ad"/>
+</LinearLayout>
